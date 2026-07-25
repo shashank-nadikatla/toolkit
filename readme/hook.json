@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Auto Update README",
+      "trigger": "Stop",
+      "action": {
+        "type": "agent",
+        "prompt": "Before finishing, determine whether changes made during this session affect the project's public documentation.\n\nIf project functionality, architecture, setup, dependencies, configuration, environment variables, folder structure, deployment, Docker configuration, public API surface, or user-facing behaviour changed, update README.md.\n\nDo not update README.md for formatting-only changes, internal refactoring, code style changes, comments, or bug fixes that do not change the project's public interface.\n\nFollow the readme-standards steering file for structure, content, and documentation quality.\n\nPreserve manually written sections whenever possible. Update only the sections affected by the current changes.\n\nProvide a brief summary of what was updated."
+      }
+    }
+  ]
+}

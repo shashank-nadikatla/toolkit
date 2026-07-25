@@ -1,16 +1,17 @@
 # Kiro Skills
 
-Reusable Kiro hooks and steering/skill files.
+Reusable hooks and steering files for [Kiro](https://kiro.dev).
 
 ## Available Skills
 
 | Skill | Description |
 |--------|-------------|
 | Postman | Automatically synchronize Postman collections from API contract changes |
+| README | Automatically update README.md when meaningful project changes are made |
 
 ## Installation
 
-Copy the desired skill folder into your project.
+Copy the desired skill folder into your project's `.kiro/` directory.
 
 Example:
 
