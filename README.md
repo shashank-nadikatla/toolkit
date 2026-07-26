@@ -21,9 +21,13 @@ Example:
 ```
 .kiro/
 ├── hooks/
-│   └── postman-sync.json
+│   └── project-log.json
 └── steering/
-    └── postman-collection-standards.md
+    ├── postman-collection-standards.md
+    ├── readme-standards.md
+    ├── project-log-standards.md
+    ├── backlog-standards.md
+    └── project-constraints.md
 ```
 
 See each skill's README for details.
