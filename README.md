@@ -8,6 +8,7 @@ Reusable hooks and steering files for [Kiro](https://kiro.dev).
 |--------|-------------|
 | Postman | Automatically synchronize Postman collections from API contract changes |
 | README | Automatically update README.md when meaningful project changes are made |
+| Project Log | Maintain an append-only PROJECT_LOG.md of meaningful changes across sessions |
 
 ## Installation
 

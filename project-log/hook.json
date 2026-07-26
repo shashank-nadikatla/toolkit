@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Append to Project Log",
+      "trigger": "Stop",
+      "action": {
+        "type": "agent",
+        "prompt": "Before completing the task, determine whether any persistent project knowledge changed during this session.\n\nPersistent project knowledge includes:\n- Features added, removed, or changed\n- Bug fixes\n- Architectural decisions\n- Configuration changes\n- Dependencies added or removed\n- Environment variables\n- Database or schema changes\n- API changes (routes, methods, payloads)\n- Build or deployment changes\n- Folder structure changes\n- Docker or infrastructure changes\n- AI prompts or steering files that affect future behaviour\n- Security or performance improvements\n- CI/CD pipeline changes\n\nIf any of the above changed, read the existing PROJECT_LOG.md, then append a summary.\n\nDo not append an entry if the same change has already been recorded.\n\nFollow the project-log-standards steering file for format, style, and rules."
+      }
+    }
+  ]
+}
