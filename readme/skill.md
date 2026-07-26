@@ -39,13 +39,15 @@ Summarise major features as a bullet list.
 
 ### Tech Stack
 
-Frameworks, languages, databases, infrastructure.
+Document the primary languages, frameworks, databases, runtime, build tools, and infrastructure technologies used by the project.
+
+Only include technologies that are explicitly used by the project.
 
 ### Folder Structure
 
-Show only directories that help developers understand the project structure.
+Show only directories that help someone understand, build, extend, or operate the project.
 
-Do not include generated, temporary, cache, vendor, or dependency directories.
+Omit implementation artefacts, generated output, caches, dependencies, IDE files, vendor directories, and other directories that do not improve understanding.
 
 ### Installation
 
@@ -108,7 +110,9 @@ The README should be:
 
 Prefer executable examples over lengthy explanations whenever practical.
 
-Prefer documenting behaviour over implementation details.
+Prefer documenting observable behaviour over implementation details.
+
+Focus on what developers need to use and contribute to the project, not how every internal component works.
 
 ## Never Include
 
@@ -132,3 +136,4 @@ Prefer documenting behaviour over implementation details.
 - Never invent commands, environment variables, configuration files, APIs, or features.
 - If information cannot be determined from the project, omit it rather than guessing.
 - Prefer incomplete but accurate documentation over complete but speculative documentation.
+- If multiple possible interpretations exist, prefer the one supported by the repository structure and configuration files.

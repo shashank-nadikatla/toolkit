@@ -4,31 +4,36 @@ Automatically updates the project's README.md when meaningful changes are made d
 
 ## Files
 
-- **`hook.json`** — Kiro hook definition. Triggers at the end of each session to evaluate whether README updates are needed.
 - **`skill.md`** — Steering file defining README structure, content standards, and documentation principles.
 
 ## Features
 
-- Triggers automatically at the end of every Kiro session
 - Updates only sections affected by changes
 - Skips formatting-only, refactoring, or internal changes
 - Preserves manually written documentation
 - Follows consistent README standards
+- Never includes secrets, speculative features, or AI instructions
 
 ## Installation
 
-Copy the files into your project's `.kiro/` directory:
+Copy the steering file into your project's `.kiro/` directory:
 
 | Source | Destination |
 |--------|-------------|
-| `hook.json` | `.kiro/hooks/readme-update.json` |
 | `skill.md` | `.kiro/steering/readme-standards.md` |
 
 Restart Kiro if required.
 
-## What happens
+## Usage
 
-1. A Kiro session ends.
-2. The hook evaluates whether changes affect public documentation.
-3. If relevant changes are detected, README.md is updated following the standards in `skill.md`.
-4. Only affected sections are modified; the rest is preserved.
+Ask Kiro to update your README:
+
+```
+update readme
+```
+
+Kiro will follow the standards defined in `skill.md` to update only the relevant sections based on your current project state.
+
+## What it does
+
+The steering file instructs Kiro to keep your README accurate and up-to-date by following a defined structure (overview, features, tech stack, installation, etc.) and a strict set of documentation principles — only updating what changed, never guessing, and never exposing secrets.
